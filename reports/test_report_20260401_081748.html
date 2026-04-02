@@ -1,0 +1,333 @@
+
+    <html>
+    <head>
+        <title>Test Execution Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 24px;
+                background: #f5f7fb;
+                color: #222;
+            }
+            h1 {
+                margin-bottom: 8px;
+            }
+            .meta {
+                color: #666;
+                margin-bottom: 24px;
+            }
+            .summary {
+                display: flex;
+                gap: 16px;
+                margin-bottom: 24px;
+                flex-wrap: wrap;
+            }
+            .card {
+                background: white;
+                border-radius: 12px;
+                padding: 16px 20px;
+                min-width: 180px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            }
+            .card h3 {
+                margin: 0 0 8px 0;
+                font-size: 16px;
+                color: #555;
+            }
+            .card p {
+                margin: 0;
+                font-size: 28px;
+                font-weight: bold;
+            }
+            .pass-count {
+                color: #198754;
+            }
+            .fail-count {
+                color: #dc3545;
+            }
+            .total-count {
+                color: #0d6efd;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                background: white;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+                border-radius: 12px;
+                overflow: hidden;
+            }
+            th, td {
+                border: 1px solid #e5e7eb;
+                padding: 12px;
+                text-align: left;
+                vertical-align: top;
+            }
+            th {
+                background: #111827;
+                color: white;
+            }
+            .PASS {
+                color: #198754;
+                font-weight: bold;
+            }
+            .FAIL {
+                color: #dc3545;
+                font-weight: bold;
+            }
+            .screenshot-link a {
+                color: #0d6efd;
+                text-decoration: none;
+            }
+            .screenshot-link a:hover {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Automation Test Execution Report</h1>
+        <div class="meta">Generated on: 2026-04-01 08:17:50</div>
+
+        <div class="summary">
+            <div class="card">
+                <h3>Total Tests</h3>
+                <p class="total-count">27</p>
+            </div>
+            <div class="card">
+                <h3>Passed</h3>
+                <p class="pass-count">27</p>
+            </div>
+            <div class="card">
+                <h3>Failed</h3>
+                <p class="fail-count">0</p>
+            </div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Test Name</th>
+                <th>Status</th>
+                <th>Description</th>
+                <th>Execution Time (sec)</th>
+                <th>Screenshot</th>
+            </tr>
+    
+            <tr>
+                <td>UI - Login</td>
+                <td class="PASS">PASS</td>
+                <td>Valid login and redirect to products page</td>
+                <td>16.51</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Invalid Login</td>
+                <td class="PASS">PASS</td>
+                <td>Invalid credentials should show error</td>
+                <td>10.45</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Empty Login</td>
+                <td class="PASS">PASS</td>
+                <td>Empty login should show validation message</td>
+                <td>9.43</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Products</td>
+                <td class="PASS">PASS</td>
+                <td>Products page loads with items</td>
+                <td>10.45</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Product Detail</td>
+                <td class="PASS">PASS</td>
+                <td>Product detail page loads correctly</td>
+                <td>12.28</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Product Image Change By Color</td>
+                <td class="PASS">PASS</td>
+                <td>Image updates when color changes</td>
+                <td>11.72</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Cart</td>
+                <td class="PASS">PASS</td>
+                <td>Product can be added to cart</td>
+                <td>12.58</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Cart Selected Color Image</td>
+                <td class="PASS">PASS</td>
+                <td>Cart shows correct image based on color</td>
+                <td>11.76</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Remove Cart</td>
+                <td class="PASS">PASS</td>
+                <td>User can remove item from cart (variant aware)</td>
+                <td>12.88</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Same Variant Quantity</td>
+                <td class="PASS">PASS</td>
+                <td>Same variant increases quantity</td>
+                <td>12.64</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Different Variant Separate Line</td>
+                <td class="PASS">PASS</td>
+                <td>Different variants shown separately</td>
+                <td>11.85</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Remove Specific Variant</td>
+                <td class="PASS">PASS</td>
+                <td>Removes only selected variant</td>
+                <td>13.25</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Checkout</td>
+                <td class="PASS">PASS</td>
+                <td>Checkout clears cart</td>
+                <td>11.82</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Orders</td>
+                <td class="PASS">PASS</td>
+                <td>Orders page displays data</td>
+                <td>12.07</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Empty Orders</td>
+                <td class="PASS">PASS</td>
+                <td>Empty orders handled correctly</td>
+                <td>10.28</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Cancel Order</td>
+                <td class="PASS">PASS</td>
+                <td>Order can be cancelled</td>
+                <td>11.96</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Dashboard</td>
+                <td class="PASS">PASS</td>
+                <td>Dashboard loads correctly</td>
+                <td>11.89</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>UI - Dashboard Update</td>
+                <td class="PASS">PASS</td>
+                <td>Dashboard updates after cancel</td>
+                <td>12.15</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>API - Products</td>
+                <td class="PASS">PASS</td>
+                <td>Fetch all products successfully</td>
+                <td>1.07</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>API - Product Variants</td>
+                <td class="PASS">PASS</td>
+                <td>Validate color-image mapping</td>
+                <td>1.1</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>API - Cart</td>
+                <td class="PASS">PASS</td>
+                <td>Cart API returns correct data</td>
+                <td>1.12</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>API - Orders</td>
+                <td class="PASS">PASS</td>
+                <td>Orders API returns data</td>
+                <td>1.12</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>API - Dashboard</td>
+                <td class="PASS">PASS</td>
+                <td>Dashboard summary metrics correct</td>
+                <td>1.12</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>API - Cart State</td>
+                <td class="PASS">PASS</td>
+                <td>Handles empty/non-empty cart</td>
+                <td>1.15</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>API - Orders State</td>
+                <td class="PASS">PASS</td>
+                <td>Handles empty/non-empty orders</td>
+                <td>1.14</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>API - After Checkout</td>
+                <td class="PASS">PASS</td>
+                <td>Dashboard updates after checkout</td>
+                <td>1.17</td>
+                <td>-</td>
+            </tr>
+        
+            <tr>
+                <td>API - After Cancel</td>
+                <td class="PASS">PASS</td>
+                <td>Dashboard updates after cancel</td>
+                <td>1.17</td>
+                <td>-</td>
+            </tr>
+        
+        </table>
+    </body>
+    </html>
+    
